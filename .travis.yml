@@ -2,13 +2,7 @@ language: node_js
 sudo: true
 dist: trusty
 node_js:
-<<<<<<< HEAD
-  - "5"
-  - "4"
-  - "0.10"
-=======
   - "5.0"
->>>>>>> mxstbr/master
 script: npm run build
 before_install:
   - export CHROME_BIN=/usr/bin/google-chrome
