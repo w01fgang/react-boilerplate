@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React.js Boilerplate
 
 [![Dependency Status][dep-status-img]][dep-status-link] [![devDependency Status][dev-dep-status-img]][dev-dep-status-link] [![Build Status][ci-img]][ci] [![Join the chat at https://gitter.im/mxstbr/react-boilerplate](https://badges.gitter.im/mxstbr/react-boilerplate.svg)](https://gitter.im/mxstbr/react-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -14,6 +15,55 @@ Made with :heart: by [Max Stoiber](https://twitter.com/mxstbr)!
 [ci]: https://travis-ci.org/mxstbr/react-boilerplate
 
 -----
+=======
+<img src="https://raw.githubusercontent.com/mxstbr/react-boilerplate-brand/master/assets/banner-metal.jpg" alt="react boilerplate banner" align="center" />
+
+<br />
+
+<div align="center"><strong>Start your next react project in seconds</strong></div>
+<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
+
+<br />
+
+<div align="center">
+  <!-- Dependency Status -->
+  <a href="https://david-dm.org/mxstbr/react-boilerplate">
+    <img src="https://david-dm.org/mxstbr/react-boilerplate.svg" alt="Dependency Status" />
+  </a>
+  <!-- devDependency Status -->
+  <a href="https://david-dm.org/mxstbr/react-boilerplate#info=devDependencies">
+    <img src="https://david-dm.org/mxstbr/react-boilerplate/dev-status.svg" alt="devDependency Status" />
+  </a>
+  <!-- Build Status -->
+  <a href="https://travis-ci.org/mxstbr/react-boilerplate">
+    <img src="https://travis-ci.org/mxstbr/react-boilerplate.svg" alt="Build Status" />
+  </a>
+  <!-- Test Coverage -->
+  <a href="https://coveralls.io/r/mxstbr/react-boilerplate">
+    <img src="https://coveralls.io/repos/github/mxstbr/react-boilerplate/badge.svg" alt="Test Coverage" />
+  </a>
+</div>
+<div align="center">
+    <!-- Backers -->
+  <a href="#backers">
+    <img src="https://opencollective.com/react-boilerplate/backers/badge.svg" alt="Backers" />
+  </a>
+      <!-- Sponsors -->
+  <a href="#sponsors">
+    <img src="https://opencollective.com/react-boilerplate/sponsors/badge.svg" alt="Sponsors" />
+  </a>
+  <!-- Gitter -->
+  <a href="https://gitter.im/mxstbr/react-boilerplate">
+    <img src="https://camo.githubusercontent.com/54dc79dc7da6b76b17bc8013342da9b4266d993c/68747470733a2f2f6261646765732e6769747465722e696d2f6d78737462722f72656163742d626f696c6572706c6174652e737667" alt="Gitter Chat" />
+  </a>
+</div>
+
+<br />
+
+<div align="center">
+  <sub>Made with ❤︎ by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and <a href="https://github.com/mxstbr/react-boilerplate/graphs/contributors">contributors</a>. <i>If you're using this boilerplate, we'd love to <a href="https://github.com/mxstbr/react-boilerplate/issues/115">hear from you</a>!</i></sub>
+</div>
+>>>>>>> mxstbr/master
 
 Version 3.0 is actively being developed on the [v3.0.0 branch], please check it out and leave feedback!
 (PRs on `master` are not going to be merged.)
@@ -22,6 +72,7 @@ Version 3.0 is actively being developed on the [v3.0.0 branch], please check it 
 
 ## Features
 
+<<<<<<< HEAD
 - Using [**react-transform-hmr**](https://github.com/gaearon/react-transform-hmr), your changes in the CSS and JS get reflected in the app instantly without refreshing the page. That means that the **current application state persists** even when you change something in the underlying code! For a very good explanation and demo, watch Dan Abramov himself [talking about it at react-europe](https://www.youtube.com/watch?v=xsSnOQynTHs).
 
 - [**Redux**](https://github.com/rackt/redux) is a much better implementation of a flux–like, unidirectional data flow. Redux makes actions composable, reduces the boilerplate code and makes hot–reloading possible in the first place. For a good overview of redux, check out the talk linked above or the [official documentation](https://gaearon.github.io/redux/)!
@@ -105,62 +156,105 @@ If you simply use web fonts in your project, the page will stay blank until thes
 1. Either add the `@font-face` declaration to `base/_fonts.css` or add a `<link>` tag to the [`index.html`](index.html). (Don't forget to remove the `<link>` for Open Sans from the [`index.html`](index.html))
 
 2. In `base/_base.css`, specify your initial `font-family` in the `body` tag with only safe fonts. In the `body.js-<font-name>-loaded` tag, specify your `font-family` stack with your web font.
+=======
+<dl>
+  <dt>Quick scaffolding</dt>
+  <dd>Create components, containers, routes, selectors and sagas - and their tests - right from the CLI!</dd>
 
-3. In `js/app.js` add a `<font-name>Observer` for your font.
+  <dt>Instant feedback</dt>
+  <dd>Enjoy the best DX (Developer eXperience) and code your app at the speed of thought! Your saved changes to the CSS and JS are reflected instantaneously without refreshing the page. Preserve application state even when you update something in the underlying code!</dd>
+>>>>>>> mxstbr/master
 
-#### Removing performant web font loading
+  <dt>Predictable state management</dt>
+  <dd>Unidirectional data flow allows for change logging and time travel debugging.</dd>
 
-**Careful** about removing this, as perceived performance might be highly impacted.
+  <dt>Next generation JavaScript</dt>
+  <dd>Use template strings, object destructuring, arrow functions, JSX syntax and more, today.</dd>
 
-To remove `FontFaceObserver`, don't import it in [`app.js`](js/app.js) and remove it from the [`package.json`](package.json).
+  <dt>Next generation CSS</dt>
+  <dd>Write composable CSS that's co-located with your components for complete modularity. Unique generated class names keep the specificity low while eliminating style clashes. Ship only the styles that are on the page for the best performance.</dd>
 
-### Offline access
+  <dt>Industry-standard routing</dt>
+  <dd>It's natural to want to add pages (e.g. `/about`) to your application, and routing makes this possible.</dd>
 
-Using a `ServiceWorker` and the `Application Cache`, your application is cached for offline usage.
+  <dt>Offline-first</dt>
+  <dd>The next frontier in performant web apps: availability without a network connection from the instant your users load the app.</dd>
 
-#### Cache a new file
+  <dt>SEO</dt>
+  <dd>We support SEO (document head tags management) for search engines that support indexing of JavaScript content. (eg. Google)</dd>
+</dl>
 
-To cache a file, add it to the `urlsToCache` variable in the [`serviceworker.js`](serviceworker.js) file.
+But wait... there's more!
 
-#### Removing offline access
+  - *The best test setup:* Automatically guarantee code quality and non-breaking
+    changes. (Seen a react app with 99% test coverage before?)
+  - *Native web app:* Your app's new home? The home screen of your users' phones.
+  - *The fastest fonts:* Say goodbye to vacant text.
+  - *Stay fast*: Profile your app's performance from the comfort of your command
+    line!
+  - *Catch problems:* AppVeyor and TravisCI setups included by default, so your
+    tests get run automatically on Windows and Unix.
 
-**Careful** about removing this, as there is no real downside to having your application available when the users network connection isn't perfect.
+There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on how to structure your React.js apps with scalability in mind. It provides rationale for the majority of boilerplate's design decisions.
 
-To remove offline capability, delete [`serviceworker.js`](serviceworker.js), remove the import in [`app.js`](js/app.js), remove `AppCachePlugin` in [`makewebpackconfig.js`](makewebpackconfig.js) and remove the `manifest` attribute of the `<html>` tag in [`index.html`](index.html).
+<sub><i>Keywords: React.js, Redux, Hot Reloading, ESNext, Babel, PostCSS, Autoprefixer, react-router, Offline First, ServiceWorker, CSS Modules, redux-saga, FontFaceObserver, PageSpeed Insights</i></sub>
 
-### Add To Homescreen
+## Quick start
 
-On Chrome for Android (soon hopefully more browsers), users can add a webpage to the homescreen. Combined with offline caching, this means your web app can be used exactly like a native application.
+1. Clone this repo using `git clone --depth=1 https://github.com/mxstbr/react-boilerplate.git`
+1. Run `npm run setup` to install dependencies and clean the git repo.<br />
+   *At this point you can run `npm start` to see the example app at `http://localhost:3000`.*
+1. Run `npm run clean` to delete the example app.
 
-The name and icon to be displayed are set in the `manifest.json` file. Change them to your project name and icon, and try it!
+Now you're ready to rumble!
 
-#### Removing add to homescreen functionality
+> Please note that this boilerplate is **not meant for beginners**! If you're just starting out with react or redux, please refer to https://github.com/petehunt/react-howto instead.
 
-Delete [`manifest.json`](manifest.json) and remove the `<link rel="manifest" href="manifest.json">` tag from the [`index.html`](index.html).
+## Documentation
 
-## Gotchas
+- [Intro](docs/general): What's included and why
+- [**Commands**](docs/general/commands.md): Getting the most out of this boilerplate
+- [Testing](docs/testing): How to work with the built-in test harness
+- [Styling](docs/css): How to work with the CSS tooling
+- [Your app](docs/js): Supercharging your app with Routing, Redux, simple
+  asynchronicity helpers, etc.
 
-These are some things to be aware of when using this boilerplate.
+## Supporters
 
-### Images in the HTML file(s)
+This project would not be possible without the support by these amazing folks. [**Become a sponsor**](https://opencollective.com/react-boilerplate) to get your company in front of thousands of engaged react developers and help us out!
 
-Adding images to the HTML is a bit of a pain right now as webpack only goes through the JavaScript file. Add the image to your HTML file how you always would:
+<div align="center">
+<a href="http://reactjsprogram.com/?utm_source=react-boilerplate&utm_medium=banner&utm_campaign=React%20Boilerplate">
+  <img src="https://cloud.githubusercontent.com/assets/7525670/16642421/09f0d97c-440b-11e6-92f6-05d680946629.png" alt="React.js Program – A linear approach to learning the React.js ecosystem!" height="120px">
+</a>
+</div>
 
-```HTML
-<!-- Normal Image -->
-<img src="img/yourimg.png" />
-<!-- Meta tags -->
-<meta property="og:image" content="img/yourimg.png" />
-<!-- ... -->
-```
+----
 
-If you simply do this, webpack will not transfer the images to the build folder. To get webpack to transfer them, you have to import them with the file loader in your JavaScript somewhere, e.g.:
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/0/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/1/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/2/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/3/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/4/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/5/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/6/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/7/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/8/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/bronze-sponsor/9/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/bronze-sponsor/9/avatar.svg"></a>
 
-```JavaScript
-import 'file?name=[name].[ext]!../img/yourimg.png';
-```
+----
 
-Then webpack will correctly transfer the image to the build folder.
+<a href="https://opencollective.com/react-boilerplate/backer/0/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/0/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/1/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/1/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/2/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/2/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/3/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/3/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/4/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/4/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/5/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/5/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/6/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/6/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/7/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/7/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/8/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/8/avatar.svg"></a>
+<a href="https://opencollective.com/react-boilerplate/backer/9/website" target="_blank"><img src="https://opencollective.com/react-boilerplate/backer/9/avatar.svg"></a>
+
 
 ## How to contribute
 
@@ -168,4 +262,9 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for infos on how you can help!
 
 ## License
 
+<<<<<<< HEAD
 This project is licensed under the MIT license, Copyright (c) 2016 Maximilian Stoiber. For more information see `LICENSE.md`.
+=======
+This project is licensed under the MIT license, Copyright (c) 2016 Maximilian
+Stoiber. For more information see `LICENSE.md`.
+>>>>>>> mxstbr/master
