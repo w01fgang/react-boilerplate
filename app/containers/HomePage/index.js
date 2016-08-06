@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import Relay from 'react-relay';
 import { connect } from 'react-redux';
 import { push } from 'react-router-redux';
 import Helmet from 'react-helmet';
@@ -163,5 +164,12 @@ const mapStateToProps = createStructuredSelector({
   error: selectError(),
 });
 
-// Wrap the component to inject dispatch and state into it
-export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
+const HomePageContainer = connect(mapStateToProps, mapDispatchToProps)(HomePage);
+const HomePageRelayContainer = Relay.createContainer(HomePageContainer, {
+  fragments: {
+    viewer: () => Relay.QL`fragment on Store {
+      id
+    }`,
+  },
+});
+export default HomePageRelayContainer;

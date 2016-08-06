@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const compression = require('compression');
 const pkg = require(path.resolve(process.cwd(), 'package.json'));
+const httpProxy = require('http-proxy');
+const proxy = httpProxy.createProxyServer();
 
 // Dev middleware
 const addDevMiddlewares = (app, webpackConfig) => {
@@ -30,7 +32,8 @@ const addDevMiddlewares = (app, webpackConfig) => {
       res.sendFile(path.join(process.cwd(), pkg.dllPlugin.path, filename));
     });
   }
-
+  // add proxy to graphql endpoint
+  app.all('/graphql', (req, res) => proxy.web(req, res, { target: 'http://127.0.0.1:3005' }));
   app.get('*', (req, res) => {
     fs.readFile(path.join(compiler.outputPath, 'index.html'), (err, file) => {
       if (err) {
